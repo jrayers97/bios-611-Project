@@ -1,1 +1,1 @@
-Hello :)
+This project will be investigating the U.S. Education Datasets: Unification Project dataset. As a graduate assistant, teaching is one of my primary duties, and one I didn't expect to be as enjoyable as it is. Since teaching I've become more and more interested in the predicators of success for students, be it at home or in their school culture. Part of this project is to see if I can detect what these predicators may be. In addition I'm curious to look into the various sociological affects on student preformance.
