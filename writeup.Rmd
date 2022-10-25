@@ -1,0 +1,14 @@
+---
+title: "Report"
+output: pdf_document
+date: "2022-10-22"
+---
+
+## Report
+
+Hello there! Here are some pictures
+
+![Federal Revenue per State for the year 1992](./figures/federalRev-against-state.png)
+
+![North Carolina student enrollment per year](./figures/NC-year-grade.png)
+
