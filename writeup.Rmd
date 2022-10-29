@@ -8,7 +8,7 @@ date: "2022-10-22"
 
 Hello there! Here are some pictures
 
-![Federal Revenue per State for the year 1992](./figures/states-revenue.png)
 
 ![North Carolina student enrollment per year](./figures/NC-year-grade.png)
 
+![Federal Revenue per State for the year 1992](./figures/states-revenue.png)

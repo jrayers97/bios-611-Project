@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 01:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,22 +434,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: File `./figures/federalRev-against-state.png' not found on input
- line 79.
+LaTeX Warning: File `./figures/states-revenue.png' not found on input line 79.
 
 
-! Package pdftex.def Error: File `./figures/federalRev-against-state.png' not f
-ound: using draft setting.
+! Package pdftex.def Error: File `./figures/states-revenue.png' not found: usin
+g draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 ...cs{./figures/federalRev-against-state.png}
+l.79 ...ludegraphics{./figures/states-revenue.png}
                                                    
 Here is how much of TeX's memory you used:
  11109 strings out of 477026
- 171447 string characters out of 5828137
+ 171117 string characters out of 5828137
  507290 words of memory out of 5000000
  32089 multiletter control sequences out of 15000+600000
  493521 words of font info for 48 fonts, out of 8000000 for 9000
