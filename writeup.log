@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 02:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 02:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,17 +434,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: File `./figures/NC-year-grade.png' not found on input line 79.
+LaTeX Warning: File `./figures/NC_year_grade.png' not found on input line 79.
 
 
-! Package pdftex.def Error: File `./figures/NC-year-grade.png' not found: using
+! Package pdftex.def Error: File `./figures/NC_year_grade.png' not found: using
  draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \includegraphics{./figures/NC-year-grade.png}
+l.79 \includegraphics{./figures/NC_year_grade.png}
                                                    
 Here is how much of TeX's memory you used:
  11109 strings out of 477026
