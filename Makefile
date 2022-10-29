@@ -22,6 +22,11 @@ figures/federalRev-against-state.png: edited_data/df_tidied.csv Code/tidy_states
 figures/NC-year-grade.png: Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
+figures/states-revenue: edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
+	Rscript Code/tidy_states_all.R
+
+figures/NC-year-avg-math: Code/plots-for-NC.R source_data/states_all.csv
+	Rscript Code/plots-for-NC.R
 
 #Build the final report for the project
 writeup.pdf: figures/federalRev-against-state.png
