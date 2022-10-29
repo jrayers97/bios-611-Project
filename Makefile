@@ -16,9 +16,6 @@ clean:
 edited_data/df_tidied.csv: .created-dirs Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
 
-figures/federalRev-against-state.png: edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
-	Rscript Code/tidy_states_all.R
-
 figures/NC-year-grade.png: Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
