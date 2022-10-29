@@ -3,7 +3,7 @@ title: "Report"
 output: pdf_document
 date: "2022-10-22"
 ---
-\usepackage{grffile}
+
 ## Report
 
 Hello there! Here are some pictures
