@@ -10,7 +10,6 @@ unique(df_wide$state)
 
 NC_df <- subset(df_wide, df$state=="NORTH_CAROLINA", select=c(year:avg_reading_8_score));
 
-row(NC_df);
 
 sub_df_year_grades <- subset(df_wide, df$state=="NORTH_CAROLINA", select=c(year, grades_all_g));
 sub_df_year_grades;
