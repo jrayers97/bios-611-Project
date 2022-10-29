@@ -19,10 +19,10 @@ edited_data/df_tidied.csv: .created-dirs Code/tidy_states_all.R source_data/stat
 figures/NC-year-grade.png: Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
-figures/states-revenue: edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
+figures/states-revenue.png: edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
 
-figures/NC-year-avg-math: Code/plots-for-NC.R source_data/states_all.csv
+figures/NC-year-avg-math.png: Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
 #Build the final report for the project
