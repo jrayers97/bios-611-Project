@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.22)  22 OCT 2022 03:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **writeup.tex
 (./writeup.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (/usr/local/texlive/texmf-dist/tex/latex/base
+L3 programming layer <2022-10-26> (/usr/local/texlive/texmf-dist/tex/latex/base
 /article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/local/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -313,11 +313,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 ) (/usr/local/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box53
-)
-No file writeup.aux.
+) (./writeup.aux)
 \openout1 = `writeup.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -394,6 +393,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 69.
+(./writeup.out) (./writeup.out)
 \@outlinefile=\write3
 \openout3 = `writeup.out'.
 
@@ -448,10 +448,10 @@ Type  H <return>  for immediate help.
 l.79 ...cs{./figures/federalRev-against-state.png}
                                                    
 Here is how much of TeX's memory you used:
- 11103 strings out of 477031
- 171375 string characters out of 5828272
- 507152 words of memory out of 5000000
- 32084 multiletter control sequences out of 15000+600000
+ 11109 strings out of 477026
+ 171447 string characters out of 5828137
+ 507290 words of memory out of 5000000
+ 32089 multiletter control sequences out of 15000+600000
  493521 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,4n,67p,512b,398s stack positions out of 10000i,1000n,20000p,200000b,200000s
