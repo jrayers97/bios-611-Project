@@ -17,7 +17,7 @@ edited_data/df_tidied.csv: .created-dirs Code/tidy_states_all.R source_data/stat
 	Rscript Code/tidy_states_all.R
 
 figures/NC_year_grade.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
-	Rscript Code/plots_for_NC.R
+	Rscript Code/plots-for-NC.R
 
 figures/states_revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
