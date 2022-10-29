@@ -13,8 +13,10 @@ NC_df <- subset(df_wide, df$state=="NORTH_CAROLINA", select=c(year:avg_reading_8
 
 sub_df_year_grades <- subset(df_wide, df$state=="NORTH_CAROLINA", select=c(year, grades_all_g));
 sub_df_year_grades;
-ggplot(data=sub_df_year_grades, aes(year,grades_all_g)) + geom_line() + 
-  theme(axis.text.x=element_text(angle = -90, hjust = 0))
+NC_year_grades<-ggplot(data=sub_df_year_grades, aes(year,grades_all_g)) + geom_line() + 
+  theme(axis.text.x=element_text(angle = -90, hjust = 0));
+
+ggsave("figures/NC_year_grade.png",plot=NC_year_grades);
 
 sub_df_year_total_exp <- subset(df_wide, df$state=="NORTH_CAROLINA", select=c(year, total_expenditure));
 sub_df_year_total_exp;

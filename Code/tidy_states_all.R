@@ -12,7 +12,8 @@ unique(sub_df$federal_revenue);
 
 write.csv(df, "./edited_data/df_tided.csv")
 
-ggplot(data=sub_df, aes(state,federal_revenue)) + geom_point() + 
+states_revenue<- ggplot(data=sub_df, aes(state,federal_revenue)) + geom_point() + 
   theme(axis.text.x=element_text(angle = -90, hjust = 0));
 
 
+ggsave("figures/states_revenue.png",plot=states_revenue);
