@@ -16,18 +16,18 @@ clean:
 edited_data/df_tidied.csv: .created-dirs Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
 
-figures/NC-year-grade.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
-	Rscript Code/plots-for-NC.R
+figures/NC_year_grade.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
+	Rscript Code/plots_for_NC.R
 
-figures/states-revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
+figures/states_revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
 
-figures/NC-year-avg-math.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
-	Rscript Code/plots-for-NC.R
+figures/NC_year_avg_math.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
+	Rscript Code/plots_for_NC.R
 
 #Build the final report for the project
-writeup.pdf: figures/NC-year-grade.png figures/states-revenue.png figures/NC-year-avg-math.png
+writeup.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png
 	pdflatex writeup.tex
 
-report.pdf: figures/NC-year-grade.png figures/states-revenue.png
+report.pdf: figures/NC_year_grade.png figures/states_revenue.png
 	R -e "rmarkdown::render(\"writeup.Rmd\", output_format=\"pdf_document\")"

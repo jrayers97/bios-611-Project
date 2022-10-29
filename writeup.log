@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  29 OCT 2022 02:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,21 +434,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-! LaTeX Error: Can be used only in preamble.
+LaTeX Warning: File `./figures/NC-year-grade.png' not found on input line 79.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `./figures/NC-year-grade.png' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \usepackage
-                {grffile} 
+l.79 \includegraphics{./figures/NC-year-grade.png}
+                                                   
 Here is how much of TeX's memory you used:
- 11061 strings out of 477026
- 169798 string characters out of 5828137
- 506290 words of memory out of 5000000
- 32058 multiletter control sequences out of 15000+600000
- 490523 words of font info for 47 fonts, out of 8000000 for 9000
+ 11109 strings out of 477026
+ 171084 string characters out of 5828137
+ 507290 words of memory out of 5000000
+ 32089 multiletter control sequences out of 15000+600000
+ 493521 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,4n,67p,512b,382s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,4n,67p,512b,398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
