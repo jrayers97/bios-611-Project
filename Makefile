@@ -26,8 +26,8 @@ figures/NC-year-avg-math: Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
 #Build the final report for the project
-writeup.pdf: figures/federalRev-against-state.png
+writeup.pdf: figures/NC-year-grade.png
 	pdflatex writeup.tex
 
-report.pdf: figures/federalRev-against-state.png
+report.pdf: figures/NC-year-grade.png
 	R -e "rmarkdown::render(\"writeup.Rmd\", output_format=\"pdf_document\")"
