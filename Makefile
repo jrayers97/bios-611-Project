@@ -25,10 +25,10 @@ figures/states_revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_st
 figures/NC_year_avg_math.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots_for_NC.R
 
-figures/US_scatterplot.png: .created-dirs Code/basic_plots.R source_data/states_all_extended.csv
+figures/US_scatterplot.png: .created-dirs Code/basic_plots.R source_data/states_all.csv
 	Rscript Code/basic_plots.R
 
-figures/NE_hist.png: .created-dirs Code/basic_plots.R source_data/states_all_extended.csv
+figures/NE_hist.png: .created-dirs Code/basic_plots.R source_data/states_all.csv
 	Rscript Code/basic_plots.R
 
 figures/PCA_0.png: .created-dirs Code/PCA_No_Impute.R source_data/states_all.csv
@@ -37,13 +37,13 @@ figures/PCA_0.png: .created-dirs Code/PCA_No_Impute.R source_data/states_all.csv
 figures/PCA_Impute.png: .created-dirs Code/PCA_With_Impute.R source_data/states_all.csv
 	Rscript Code/PCA_With_Impute.R
 
-figures/PCA_NE_Impute.png: .created-dirs Code/PCA_NE_Impute.R source_data/states_all.csv
-	Rscript Code/PCA_NE_Impute.R
+figures/PCA_NE_Impute.png: .created-dirs Code/NE_PCA.R source_data/states_all.csv
+	Rscript Code/NE_PCA.R
 
 figures/NE_Exp_Year.png: .created-dirs Code/NE_Exp_Year.R source_data/states_all.csv
 	Rscript Code/NE_Exp_Year.R
 
-figures/US_M_411.png: .created-dirs Code/US_total_exp.R source_data/states_all.csv
+figures/US_M411.png: .created-dirs Code/US_total_exp.R source_data/states_all.csv
 	Rscript Code/US_total_exp.R
 
 figures/US_M_811.png: .created-dirs Code/US_total_exp.R source_data/states_all.csv
