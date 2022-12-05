@@ -1,7 +1,6 @@
 library(tidyverse)
 install.packages("usmap")
 library(usmap)
-library(patchwork)
 
 df<- read.csv("source_data/states_all.csv")
 
@@ -55,7 +54,7 @@ png("figures/US_Exp_11.png")
 iexp11
 dev.off()
 
-png("figures/US_M_411.png")
+png("figures/US_M411.png")
 m411
 dev.off()
 

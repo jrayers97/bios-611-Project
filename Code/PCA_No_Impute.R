@@ -18,15 +18,12 @@ df_wide
 d<-df_wide[, 2:24]
 d
 
-#loop over all columns and subsitute NA values for 0 to preform the PCA
-for(i in 2:23){
-  d[[i]][is.na(d[[i]])] <-0
-}
+
 
 NE_subset<-df %>% filter(state == "MASSACHUSETTS" | state == "MAINE" | state == "NEW_HAMPSHIRE" | state == "VERMONT" | state == "CONNECTICUT" | state == "RHODE_ISLAND") 
 
 NE_subset
-
+#loop over all columns and subsitute NA values for 0 to preform the PCA
 for(i in 2:25){
   NE_subset[[i]][is.na(NE_subset[[i]])] <-0
 }
@@ -47,7 +44,7 @@ PCA_0<-autoplot(resultsNE,data = NE_subset, colour = 'state',shape='state', fram
 #  geom_point()+ggtitle("PCA with 0's inserted at NA values");
 
 
-PCA_0
+PCA_0;
 
 ggsave("figures/PCA_0.png",plot=PCA_0);
 

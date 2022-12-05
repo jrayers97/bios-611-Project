@@ -8,7 +8,7 @@ df<- read.csv("source_data/states_all.csv",stringsAsFactors=F)
 colnames(df)<-str_to_lower(colnames(df)) 
 df
 
-sub_df$state <- str_replace_all(sub_df$state, '_', ' ')
+df$state <- str_replace_all(df$state, '_', ' ')
 
 NE_subset<-df %>% filter(state == "MASSACHUSETTS" | state == "MAINE" | state == "NEW_HAMPSHIRE" | state == "VERMONT" | state == "CONNECTICUT" | state == "RHODE_ISLAND") 
 
