@@ -32,8 +32,8 @@ x<-NE_subset$avg_math_4_score
 png("figures/NE_hist.png")
 hist(x, breaks=10,col="red",xlab="Average NAEP Math Score for Grade 4 in New England",
      main="Histogram of NAEP Scores for New England")
-dev.off()
+while (!is.null(dev.list())) dev.off()
 
 png("figures/US_scatterplot.png")
 pairs(select(df_wide, c("year", "total_revenue", "federal_revenue", "instruction_expenditure")), pch = 19)
-dev.off()
+while (!is.null(dev.list())) dev.off()
