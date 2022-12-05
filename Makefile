@@ -25,7 +25,7 @@ figures/states_revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_st
 figures/NC_year_avg_math.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots_for_NC.R
 
-figures/US_scatterplot.png: .created-dirs Code/basic_plots.R source_data/states_all.csv
+figures/US_scatterplot.png: .created-dirs Code/basic_plots.R source_data/states_all_extended.csv
 	Rscript Code/basic_plots.R
 
 figures/NE_hist.png: .created-dirs Code/basic_plots.R source_data/states_all.csv
