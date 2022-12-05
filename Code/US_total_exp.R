@@ -13,6 +13,24 @@ sub_df$state <- str_replace_all(sub_df$state, '_', ' ')
 
 sub_df
 
+sub_df %>% filter(sub_df$state=="CALIFORNIA")
+
+sub_df[which(sub_df$avg_math_8_score == max(sub_df$avg_math_8_score)), ]
+
+sub_df$ratio <- sub_df$instruction_expenditure/sub_df$enroll
+
+sub_df
+
+mean_money<-plot_usmap(data = sub_df, 
+                   regions="states", 
+                   values="ratio")+ scale_fill_continuous(
+                     low = "white", high = "red", name = "Average Instructional Expenditure Per Student in 2011", label = scales::comma
+                   ) +
+  theme(legend.position = "right")
+
+png("figures/mean_money.png")
+mean_money
+dev.off()
 
 texp11<-plot_usmap(data = sub_df, 
            regions="states", 
@@ -41,6 +59,8 @@ m411<-plot_usmap(data = sub_df,
              low = "white", high = "red", name = "Average Grade 4 NAEP Math Scores Per State in 2011", label = scales::comma
            ) +
   theme(legend.position = "right")
+
+m411
 
 mEnroll<-plot_usmap(data = sub_df, 
                  regions="states", 
