@@ -13,11 +13,10 @@ This will create a docker container. Users using a unix-flavor should be able to
 
 docker run -v $(pwd):/home/rstudio/work\
            -p 8787:8787\
-           -p 8888:8888\
            -e PASSWORD="$(cat .password)"\
            -it 611-project
            
-You then visit http://localhost:8787 via a browser on your machine to access the machine and development environment. For the curious, we also expose port 8888 so that we can launch other servers from in the container.
+You then visit http://localhost:8787 via a browser on your machine to access the machine and development environment. 
 
 To view the report type the following into the terminal in the docker container:
 make writeup.pdf
