@@ -28,7 +28,7 @@ figures/NC_year_avg_math.png: .created-dirs Code/plots-for-NC.R source_data/stat
 figures/US_scatterplot.png: .created-dirs Code/basic_plots.R source_data/states_all_extended.csv
 	Rscript Code/basic_plots.R
 
-figures/NE_hist.png: .created-dirs Code/basic_plots.R source_data/states_all.csv
+figures/NE_hist.png: .created-dirs Code/basic_plots.R source_data/states_all_extended.csv
 	Rscript Code/basic_plots.R
 
 figures/PCA_0.png: .created-dirs Code/PCA_No_Impute.R source_data/states_all.csv
@@ -59,5 +59,5 @@ figures/US_texp11.png: .created-dirs Code/US_total_exp.R source_data/states_all.
 writeup.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png figures/NC_year_grade.png figures/US_scatterplot.png figures/NE_hist.png figures/PCA_0.png figures/PCA_Impute.png figures/PCA_NE_Impute.png figures/NE_Exp_Year.png figures/US_M411.png figures/US_M_811.png figures/US_mEnroll.png figures/US_texp11.png
 	pdflatex writeup.tex
 
-report.pdf: figures/NC_year_grade.png figures/states_revenue.png
+report.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png figures/NC_year_grade.png figures/US_scatterplot.png figures/NE_hist.png figures/PCA_0.png figures/PCA_Impute.png figures/PCA_NE_Impute.png figures/NE_Exp_Year.png figures/US_M_411.png figures/US_M_811.png figures.US_mEnroll.png figures/US_texp11.png
 	R -e "rmarkdown::render(\"writeup.Rmd\", output_format=\"pdf_document\")"
