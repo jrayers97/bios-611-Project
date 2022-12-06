@@ -194,4 +194,12 @@ However using the missMDA library, which imputes the missing values for us befor
 \end{figure} 
 
 With the imputed values we can see that not only do the proportional of variance increase, but we have more well defined clusters for Massachusetts and Connecticut, as well as Vermont. Moreover, the PCA tells us that the difference between Massachusetts is much more different than any other New England state. 
+\section{Correlation Heat Map}
+Finally, we zoom back out to the entire US to look at correlations between variables:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics{figures/cor.png}
+	\caption{Correlation Matrix}
+\end{figure} 
+Here we see that the test scores are the highest correlated with each other, the number of students in each grade is not very well correlated with test scores, something we saw from California and Massachusetts in the beginning. Interestingly, capital outlay expenditure seems to have high correlation with average test scores.
 \end{document}
