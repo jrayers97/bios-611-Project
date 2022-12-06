@@ -62,28 +62,136 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Report}
-\author{}
-\date{\vspace{-2.5em}2022-10-22}
+\title{BIOS 611 Final Project}
+\author{Jeffrey Ayers}
 
 \begin{document}
 \maketitle
-
+\section{Education Trends for the United States}
+\label{sec:org5437eb3}
+(Note: if you are reading the PDF of this file from the git
+repository, it may be out of date. It is included in the repo for
+convenience but the canonical writeup is in the org file in the repo. See the README instructions for how to build this pdf with make).
 \hypertarget{report}{%
-\subsection{Report}\label{report}}
+\subsection{Introduction}\label{report}}
 
-Hello there! Here are some pictures
+As a Ph.D. student in the mathematics department instruction is a big part of my job, and one that I've become increasing passionate about. Having grown up with a parent who is a teacher, and now becoming one I have developed an growing interest in seeing what factors lead to student success, especially from a monetary standpoint. I was fortunate to grow up in a state that places high value on education (Massachusetts) and have directly seen the benefits of a large instructional budget, but what about nationwide? Can we see any direct impact on student performance based on this? Moreover, what other hidden trends can we see from data? In this writeup I analyze data from the National Center for Education Statistics to see what trends occur in the US, and the Northeast.
 
-\begin{figure}
+\subsection{Preliminary Figures} 
+The data was retrieved from Kaggle: \href{https://www.kaggle.com/datasets/noriuk/us-education-datasets-unification-project}{US Education Dataset}, and minor cleaning was done to it; namely converting column names to lowercase, and removing the underling strings corresponding to state names. These data contained a wide data set of columns corresponding to states, years and a multitude of statistical information: Total enrollment, financial information, test scores from the NAEP exam for grades 4 and 8, as well as expenditure. For example, in the year 2011 we can see what the total enrollment was for each state.
+
+\begin{figure}[!ht]
 \centering
-\includegraphics{figures/NC_year_grade.png}
-\caption{North Carolina student enrollment per year}
+\includegraphics[height=5in]{figures/US_mEnroll.png}
+\caption{Total student enrollment per state in the year 2011}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics{figures/states_revenue.png}
-\caption{Federal Revenue per State for the year 1992}
+
+\newpage
+
+Correspondingly we can also view the total expenditure in dollars of each state, the total instructional expenditure, and the average NAEP math scores of each student in the states for grades 4 and 8:
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/US_texp11.png}
+	\caption{Total expenditure per state in the year 2011}
 \end{figure}
 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/US_Exp_11.png}
+	\caption{Total instructional expenditure per state in the year 2011}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/US_M411.png}
+	\caption{Average math score for grade 4 per state in the year 2011}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/US_M_811.png}
+	\caption{Average math score for grade 8 per state in the year 2011}
+\end{figure}
+\newpage
+It's no surprise that enrollment seems correlationed with total expenditure: The more students the more money needs to be put in. 
+\clearpage
+\newpage 
+
+Interestingly we see that average math scores for both grades 4 and 8 are not always correlated, it seems, with finances. For example in 2011 the mean grade 8 math score for California, the state with the highest total expenditure at \$69,847,705, was 273, whereas for Massachusetts, the state with the highest average test score at 299, only spent \$15,150,898. To understand I decided to look at how much money was being spent per student on instruction by taking a ratio of the columns:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/mean_money.png}
+	\caption{Average math score for grade 8 per state in the year 2011}
+\end{figure} 
+
+There is some slightly better information. New York has the highest ratio at 14.13 dollars per student, for an average grade 8 score of 280. California only spent 5.5 dollars per student in 2011, which could be just a factor of having the most students. Mississippi and Alabama both tied for the lowest test scores for grade 8 in 269, and both had a low dollar per student amount at 4.5 and 5 respectively. Massachusetts spent 9.3 dollars per student in instruction, and had the highest test scores. What is not included in this data set is the average salary of teachers in each state, which I suspect could be more likely to cause higher test scores, it would make sense that a higher teacher salary attracts better candidates which in turn leads to higher test scores.\\
+
+\subsection{Analysis for New England} 
+Turning to New England specifically was my next step. We first graph the instruction expenditure per year:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=4in]{figures/NE_Exp_Year.png}
+	\caption{Instruction expenditure per year for New England}
+\end{figure} 
+
+We can clearly see that Massachusetts and Connecticut far outpace the rest of the states.\\
+Looking at some more information we have a histogram of the average math scores for grade 4 students in New England:
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=4in]{figures/NE_hist.png}
+	\caption{Histogram for New England scores in 2011}
+\end{figure} 
+\newpage
+Now let's see how this compares with the rest of the US:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=3in]{figures/US_hist.png}
+	\caption{Histogram for US, with New England states colored in 2011}
+\end{figure} 
+
+Here we get a good idea how much New England states out perform others, at least for 2011. We can perform a similar histogram with all years and each test to truly see some interesting data:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=2.5in]{figures/US_hist_4_math.png}
+	\caption{Histogram for US, with New England states  colored for average grade 4 math score}
+\end{figure} 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=2.5in]{figures/US_hist_8_math.png}
+	\caption{Histogram for US, with New England states  colored for average grade 8 math score}
+\end{figure} 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=2.5in]{figures/US_hist_8_reading.png}
+	\caption{Histogram for US, with New England states  colored for average grade 8 reading score}
+\end{figure} 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=2.5in]{figures/US_hist_4_reading.png}
+	\caption{Histogram for US, with New England states colored for average grade 4 reading score}
+\end{figure} 
+\newpage
+While there is nothing definitive certainly we can see that apart from Rhode Island, New England students perform quite well on NAEP tests when they're offered.
+\clearpage
+\newpage
+
+ In an effort to see how much these states differ from each other, we perform a PCA. Given that these data are incomplete: various years are missing enrollment, test data, etc. we need to impute the data to ensure a valid PCA. My first attempt was to fill in all NA values with 0. The result is a quite bad association of states:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=5in,height=3in]{figures/PCA_0.png}
+	\caption{PC1 and PC2 for New England with 0's for NA values}
+\end{figure} 
+\newpage
+
+However using the missMDA library, which imputes the missing values for us before we preform a PCA, we can see some nice association of states:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=5in]{figures/PCA_NE_Impute.png}
+	\caption{Imputed PC1 and PC2 for New England}
+\end{figure} 
+
+With the imputed values we can see that not only do the proportional of variance increase, but we have more well defined clusters for Massachusetts and Connecticut, as well as Vermont. Moreover, the PCA tells us that the difference between Massachusetts is much more different than any other New England state. 
 \end{document}
