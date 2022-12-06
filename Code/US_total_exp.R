@@ -11,15 +11,8 @@ sub_df <- df %>% filter(df$year==2011, !state=="DODEA" & !state=="NATIONAL" & !s
 
 sub_df$state <- str_replace_all(sub_df$state, '_', ' ')
 
-sub_df
-
-sub_df %>% filter(sub_df$state=="CALIFORNIA")
-
-sub_df[which(sub_df$avg_math_8_score == max(sub_df$avg_math_8_score)), ]
-
 sub_df$ratio <- sub_df$instruction_expenditure/sub_df$enroll
 
-sub_df
 
 mean_money<-plot_usmap(data = sub_df, 
                    regions="states", 

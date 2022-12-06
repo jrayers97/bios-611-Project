@@ -10,9 +10,8 @@ df
 
 df$state <- str_replace_all(df$state, '_', ' ')
 
-NE_subset<-df %>% filter(state == "MASSACHUSETTS" | state == "MAINE" | state == "NEW_HAMPSHIRE" | state == "VERMONT" | state == "CONNECTICUT" | state == "RHODE_ISLAND") 
+NE_subset<-df %>% filter(state == "MASSACHUSETTS" | state == "MAINE" | state == "NEW HAMPSHIRE" | state == "VERMONT" | state == "CONNECTICUT" | state == "RHODE ISLAND") 
 
-NE_subset
 
 #estimate the number of principle components 
 nb_ne<-estim_ncpPCA(NE_subset[,3:ncol(NE_subset)], ncp.min=0, ncp.max=5)
