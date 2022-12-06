@@ -23,7 +23,7 @@ You then visit http://localhost:8787 via a browser on your machine to access the
 # Project Organization
 This project uses a build system called Make. The best way to understand this project is to view the makefile.
 
-A makefile is text like file that visually displays the dependencies between the various parts of the project. Namely that each figure in the final writeup is created via some data and code. These figures (called artifacts) are related to these data and code in the makefile, and are created based on the dependancies. As an example:
+A makefile is text like file that visually displays the dependencies between the various parts of the project. Namely that each figure in the final writeup is created via some data and code. These figures (called targets) are related to these data and code in the makefile, and are created based on the dependancies. As an example:
 ```
 figures/PCA_NE_Impute.png: .created-dirs Code/NE_PCA.R source_data/states_all.csv
 	Rscript Code/NE_PCA.
