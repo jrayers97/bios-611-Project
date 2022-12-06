@@ -19,6 +19,9 @@ edited_data/df_tidied.csv: .created-dirs Code/tidy_states_all.R source_data/stat
 figures/NC_year_grade.png: .created-dirs Code/plots-for-NC.R source_data/states_all.csv
 	Rscript Code/plots-for-NC.R
 
+figures/cor.png: .created-dirs Code/Corr_matrix.R source_data/states_all.csv
+	Rscript Code/Corr_matrix.R
+
 figures/states_revenue.png: .created-dirs edited_data/df_tidied.csv Code/tidy_states_all.R source_data/states_all.csv
 	Rscript Code/tidy_states_all.R
 
@@ -74,7 +77,7 @@ figures/mean_money.png: .created-dirs Code/US_total_exp.R source_data/states_all
 	Rscript Code/US_total_exp.R
 
 #Build the final report for the project
-writeup.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png figures/NC_year_grade.png figures/US_scatterplot.png figures/NE_hist.png figures/PCA_0.png figures/PCA_Impute.png figures/PCA_NE_Impute.png figures/NE_Exp_Year.png figures/US_M411.png figures/US_M_811.png figures/US_mEnroll.png figures/US_texp11.png figures/mean_money.png figures/US_hist.png figures/US_hist_8_reading.png figures/US_hist_4_reading.png figures/US_hist_4_math.png figures/US_hist_8_math.png
+writeup.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png figures/NC_year_grade.png figures/US_scatterplot.png figures/NE_hist.png figures/PCA_0.png figures/PCA_Impute.png figures/PCA_NE_Impute.png figures/NE_Exp_Year.png figures/US_M411.png figures/US_M_811.png figures/US_mEnroll.png figures/US_texp11.png figures/mean_money.png figures/US_hist.png figures/US_hist_8_reading.png figures/US_hist_4_reading.png figures/US_hist_4_math.png figures/US_hist_8_math.png figures/cor.png
 	pdflatex writeup.tex
 
 report.pdf: figures/NC_year_grade.png figures/states_revenue.png figures/NC_year_avg_math.png figures/NC_year_grade.png figures/US_scatterplot.png figures/NE_hist.png figures/PCA_0.png figures/PCA_Impute.png figures/PCA_NE_Impute.png figures/NE_Exp_Year.png figures/US_M_411.png figures/US_M_811.png figures.US_mEnroll.png figures/US_texp11.png
