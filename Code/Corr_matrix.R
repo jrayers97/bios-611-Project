@@ -20,7 +20,7 @@ nb_ne<-estim_ncpPCA(NE_subset[,3:ncol(NE_subset)], ncp.min=0, ncp.max=5)
 #perform the imputation 
 NE_impute<-imputePCA(NE_subset[,3:ncol(NE_subset)],ncp=nb_ne$ncp)
 
-correlation <-round(cor(NE_impute$completeObs[,3:23]),2)
+correlation <-round(cor(NE_impute$completeObs[,1:23]),2)
 
 melt_correlation<-melt(correlation)
 cor_matrix<-ggplot(data = melt_correlation, aes(x=Var1, y=Var2, fill=value)) + 
