@@ -1,9 +1,9 @@
-#README
-##Jeffrey Ayers
+# README
+## Jeffrey Ayers
 This project will be investigating the U.S. Education Datasets: Unification Project dataset. As a graduate assistant, teaching is one of my primary duties, and one I didn't expect to be as enjoyable as it is. Since teaching I've become more and more interested in the predicators of success for students, be it at home or in their school culture. Part of this project is to see if I can detect what these predicators may be. In addition I'm curious to look into the various sociological affects on student preformance.
 
 
-#Using the repository:
+# Using the repository:
 This repository is best used via Docker although you may be able to consult the Dockerfile to understand what requirements are appropriate to run the code.
 
 Docker is a tool from software engineering (really, deployment) which is nevertheless of great use to the data scientist. Docker builds an environment (think of it as a light weight virtual computer) which contains all the software needed for the project. This allows any user with Docker (or a compatible system) to run the code without bothering with the often complex task of installing all the required libraries.
@@ -20,7 +20,7 @@ docker run -v $(pwd):/home/rstudio/work\
            
 You then visit http://localhost:8787 via a browser on your machine to access the machine and development environment. 
 
-#Project Organization
+# Project Organization
 This project uses a build system called Make. The best way to understand this project is to view the makefile.
 
 A makefile is text like file that visually displays the dependencies between the various parts of the project. Namely that each figure in the final writeup is created via some data and code. These figures (called artifacts) are related to these data and code in the makefile, and are created based on the dependancies. As an example:
